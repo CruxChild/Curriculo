@@ -1,0 +1,27 @@
+.title-1 {
+  font: 700 2.75rem/1.35 "josefin slab", serif;
+}
+
+.title-2 {
+  font: 600 2.5rem/1.35 "josefin slab", serif;
+}
+
+.title-3 {
+  font: 400 2.25rem/1.35 "josefin slab", serif;
+}
+
+.text-r-large {
+  font: 500 1.5rem/1.35 "josefin sans", sans-serif;
+}
+
+.text-l-large {
+  font: 300 1.5rem/1.35 "josefin sans", sans-serif;
+}
+
+.text-r-thin {
+  font: 400 1.25rem/1.35 "josefin sans", sans-serif;
+}
+
+.text-l-thin {
+  font: 300 1.25rem/1.35 "josefin sans", sans-serif;
+}

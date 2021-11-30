@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 430px) {
+  h1,
+  h2,
+  h3,
+  a,
+  li,
+  ul,
+  p,
+  span,
+  header,
+  div,
+  footer,
+  section,
+  nav {
+    padding: 0px;
+    border: none;
+  }
+}

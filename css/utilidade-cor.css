@@ -1,0 +1,83 @@
+/* Light theme*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --cor-0: #ffffff;
+    --cor-1: #f3f3f3;
+    --cor-2: #e0e0e0;
+    --cor-3: #bdbdbd;
+    --cor-4: #707070;
+    --cor-5: #454545;
+    --cor-6: #1e1e1e;
+    --cor-s-0: #400101;
+    --cor-s-1: #8c0303;
+    --cor-s-2: #8c2d2d;
+  }
+  /* Switch Logo */
+  .dark {
+    display: none;
+  }
+}
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-0: #1e1e1e;
+    --cor-1: #707070;
+    --cor-2: #ffffff;
+    --cor-3: #454545;
+    --cor-4: #e0e0e0;
+    --cor-5: #f3f3f3;
+    --cor-6: #bdbdbd;
+    --cor-s-0: #8c2d2d;
+    --cor-s-1: #8c2d2d;
+    --cor-s-2: #8c2d2d;
+  }
+
+  body {
+    background-color: var(--cor-0);
+  }
+
+  /* Switch Logo */
+  .light {
+    display: none;
+  }
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+
+.cor-1 {
+  color: var(--cor-1);
+}
+
+.cor-2 {
+  color: var(--cor-2);
+}
+
+.cor-3 {
+  color: var(--cor-3);
+}
+
+.cor-4 {
+  color: var(--cor-4);
+}
+
+.cor-5 {
+  color: var(--cor-5);
+}
+
+.cor-6 {
+  color: var(--cor-6);
+}
+
+.cor-s-0 {
+  color: var(--cor-s-0);
+}
+
+.cor-s-1 {
+  color: var(--cor-s-1);
+}
+
+.cor-s-2 {
+  color: var(--cor-s-2);
+}

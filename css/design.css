@@ -1,0 +1,92 @@
+*,
+a {
+  color: var(--cor-6);
+}
+
+.menu-lista li,
+.menu-lista-footer li,
+.bikcraft,
+.animais {
+  border-left: 3px solid transparent;
+}
+
+.menu-lista li:hover,
+.menu-lista-footer li:hover,
+.sobre p,
+.formacao ul,
+.bikcraft:hover,
+.animais:hover {
+  border-left: 3px solid var(--cor-s-0);
+}
+
+/* Dispositivos abaixo de 830px de largura */
+@media (max-width: 830px) {
+  .formacao ul {
+    border-left: 3px solid transparent;
+  }
+  .formacao-lista li:nth-child(odd) {
+    border-left: 3px solid var(--cor-s-0);
+  }
+  .bikcraft,
+  .animais {
+    border-bottom: 3px solid transparent;
+  }
+
+  .bikcraft:hover,
+  .animais:hover {
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid var(--cor-s-0);
+  }
+}
+
+/* Dispositivos abaixo de 700px de largura */
+
+@media (max-width: 700px) {
+  .sobre p,
+  .formacao ul,
+  .formacao-lista li:nth-child(odd) {
+    border-left: 3px solid transparent;
+  }
+
+  .menu-lista li,
+  .menu-lista-footer li {
+    border-bottom: 3px solid var(--cor-s-0);
+  }
+
+  .menu-lista li:hover,
+  .menu-lista-footer li:hover {
+    border-left: 3px solid var(--cor-s-0);
+  }
+
+  .github:hover {
+    background-color: var(--cor-s-0);
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-lista li,
+  .menu-lista-footer li {
+    border-bottom: 3px solid transparent;
+  }
+
+  .menu-lista li:hover,
+  .menu-lista-footer li:hover {
+    border-left: 3px solid transparent;
+    background-color: var(--cor-s-0);
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre p {
+    font-size: 1.25rem;
+  }
+
+  .contato span,
+  .contato p {
+    font-size: 1rem;
+  }
+
+  .contato-lista {
+    margin-bottom: 40px;
+  }
+}

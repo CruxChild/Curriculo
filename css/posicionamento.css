@@ -1,0 +1,480 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.logo {
+  grid-column: 5 / 7;
+}
+
+.menu {
+  grid-column: 3/8;
+  grid-row: 2;
+}
+.menu-lista {
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.menu-lista li {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.sobre {
+  grid-column: 2/9;
+  grid-row: 3;
+}
+
+.sobre h2 {
+  text-align: center;
+}
+
+.sobre h2,
+.sobre p {
+  padding: 0 100px;
+}
+
+.formacao {
+  grid-column: 2/9;
+  grid-row: 4;
+}
+
+.formacao h2 {
+  text-align: center;
+}
+
+.formacao h2,
+.formacao ul {
+  padding: 0 100px;
+}
+
+.formacao h3 {
+  text-align: center;
+}
+
+.formacao-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin: 40px 0;
+  max-width: 900px;
+}
+
+.formacao-lista li:nth-child(even) {
+  text-align: end;
+}
+
+.certificados {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-self: space-between;
+  gap: 40px;
+}
+
+.certificados img {
+  width: 240px;
+  height: 132px;
+}
+
+.habilidades {
+  grid-column: 2 / 9;
+  grid-row: 5;
+}
+
+.habilidades h2 {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.habilidades-lista {
+  display: block;
+}
+
+.habilidades-lista li {
+  margin-left: 120px;
+  margin-bottom: 32px;
+  grid-column: 2/9;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.habilidades-lista li::after {
+  content: "";
+  width: 360px;
+  height: 12px;
+  background: var(--cor-s-1);
+  grid-column: 2/5;
+  justify-self: center;
+}
+
+.portifolio {
+  grid-column: 2 / 9;
+  grid-row: 6;
+}
+
+.portifolio-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.portifolio h2 {
+  text-align: center;
+}
+
+.portifolio h3 {
+  text-align: end;
+}
+
+.bikcraft {
+  grid-column: 6;
+}
+
+.bikcraft-p {
+  grid-column: 4/7;
+  grid-row: 2;
+  text-align: end;
+  max-width: 40vw;
+  justify-self: end;
+}
+
+.animais {
+  grid-column: 5/7;
+  justify-items: end;
+}
+
+.animais-p {
+  grid-column: 4/7;
+  grid-row: 4;
+  text-align: end;
+  max-width: 40vw;
+  justify-self: end;
+}
+
+.github {
+  display: flex;
+  margin: 0px;
+  padding: 32px 0;
+  word-break: break-all;
+  grid-row: 2/5;
+  grid-column: 2;
+  width: 32px;
+  text-align: center;
+}
+
+.contato {
+  grid-column: 2 / 9;
+  grid-row: 7;
+}
+
+.contato h2 {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.contato-lista {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+}
+
+.contato-lista li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tel {
+  grid-row: 1;
+  grid-column: 3/6;
+}
+
+.email {
+  grid-row: 2;
+  grid-column: 3/6;
+}
+
+.linkedin {
+  grid-row: 3;
+  grid-column: 3/6;
+}
+
+.end {
+  grid-row: 4;
+  grid-column: 3/6;
+  display: flex;
+  flex-direction: column;
+}
+
+.end p {
+  margin: 0px;
+}
+
+.contato-lista img {
+  grid-column: 2;
+}
+
+footer {
+  grid-column: 3/8;
+  grid-row: 8;
+}
+
+.menu-lista-footer {
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.menu-lista-footer li {
+  padding: 0 5px;
+}
+
+.logo-footer {
+  display: grid;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+.botao-home {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Dispositivos com 1100 largura */
+@media (max-width: 1100px) {
+  .formacao-lista {
+    gap: 60px 0px;
+  }
+}
+
+/* Dispositivos com 960 largura */
+@media (max-width: 970px) {
+  .sobre h2,
+  .sobre p,
+  .formacao ul {
+    padding: 0;
+    padding-left: 16px;
+  }
+
+  .sobre p {
+    text-align: center;
+  }
+
+  .habilidades-lista li::after {
+    width: 300px;
+    height: 12px;
+  }
+}
+
+/* Dispositivos com 830px largura */
+@media (max-width: 830px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .logo {
+    grid-column: 4 / 5;
+  }
+
+  .menu,
+  .sobre,
+  .formacao,
+  .habilidades,
+  .portifolio,
+  .contato,
+  footer {
+    grid-column: 2/7;
+  }
+
+  .formacao ul {
+    padding: 0;
+  }
+
+  .formacao-lista {
+    gap: 20px 40px;
+  }
+  .formacao-lista li:nth-child(odd) {
+    text-align: center;
+  }
+
+  .formacao-lista li:nth-child(even) {
+    text-align: center;
+  }
+
+  .certificados {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .certificados img {
+    width: 480px;
+    height: 264px;
+  }
+
+  .habilidades-lista li {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .habilidades-lista li::after {
+    width: 240px;
+    grid-column: 2/-1;
+  }
+
+  .portifolio-container {
+    display: block;
+    align-items: center;
+  }
+
+  .portifolio h2,
+  .portifolio h3 {
+    text-align: center;
+  }
+
+  .bikcraft-p,
+  .animais-p {
+    text-align: center;
+    max-width: 100vw;
+    margin: 16px;
+  }
+
+  .github {
+    display: block;
+    word-break: normal;
+    width: auto;
+    text-align: center;
+  }
+}
+
+/* Dispositivos com 700 largura */
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .logo {
+    grid-column: 3 / 4;
+  }
+
+  .sobre h2,
+  .sobre p,
+  .formacao ul {
+    padding: 0px;
+  }
+
+  .menu,
+  .sobre,
+  .formacao,
+  .habilidades,
+  .portifolio,
+  .contato,
+  footer {
+    grid-column: 1/-1;
+  }
+
+  .formacao-lista {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .formacao-lista li:nth-child(odd) {
+    margin-top: 20px;
+  }
+
+  .github a {
+    padding: 40px 150px;
+  }
+
+  .certificados img {
+    width: 240px;
+    height: 132px;
+  }
+
+  .botao-home {
+    display: none;
+  }
+}
+
+/* Dispositivos com 600 largura */
+@media (max-width: 600px) {
+  .habilidades {
+    grid-column: 1/ -1;
+    grid-row: 5;
+  }
+
+  .habilidades {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  .habilidades-lista li {
+    margin: 0px 16px;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dispositivos com 500 largura */
+@media (max-width: 500px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    padding: 0 100px;
+  }
+
+  .menu-lista,
+  .menu-lista-footer {
+    align-items: center;
+    gap: 20px 0;
+  }
+
+  .menu-lista li,
+  .menu-lista-footer li {
+    padding: 0px;
+  }
+}
+
+/* Dispositivos com 480 largura */
+@media (max-width: 480px) {
+  .github a {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 430px) {
+  .logo h1,
+  .logo h1 a {
+    max-width: 330px;
+  }
+  a {
+    padding: 0px;
+  }
+
+  .habilidades-lista {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .habilidades-lista li::after {
+    margin-left: 10px;
+    width: 200px;
+    height: 12px;
+  }
+
+  .github {
+    padding: 0px;
+  }
+}
