@@ -19,6 +19,11 @@ a {
   border-left: 3px solid var(--cor-s-0);
 }
 
+.menu-lista li,
+.menu-lista-footer li {
+  cursor: pointer;
+}
+
 /* Dispositivos abaixo de 830px de largura */
 @media (max-width: 830px) {
   .formacao ul {

@@ -21,6 +21,11 @@ body {
   padding: 0 5px;
 }
 
+.menu-lista li a,
+.menu-lista-footer li a {
+  padding: 5px 0px;
+}
+
 .sobre {
   grid-column: 2/9;
   grid-row: 3;
@@ -139,6 +144,10 @@ body {
   justify-self: end;
 }
 
+.bikcraft a {
+  padding: 12px 0;
+}
+
 .animais {
   grid-column: 5/7;
   justify-items: end;
@@ -163,6 +172,9 @@ body {
   text-align: center;
 }
 
+.github a {
+  padding: 0 10px;
+}
 .contato {
   grid-column: 2 / 9;
   grid-row: 7;
@@ -200,6 +212,10 @@ body {
 .linkedin {
   grid-row: 3;
   grid-column: 3/6;
+}
+
+.linkedin a {
+  padding: 8px 0;
 }
 
 .end {
