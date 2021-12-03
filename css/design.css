@@ -66,6 +66,9 @@ a {
   .github:hover {
     background-color: var(--cor-s-0);
   }
+  .github a:hover {
+    color: var(--cor-2);
+  }
 }
 
 @media (max-width: 500px) {
@@ -78,6 +81,11 @@ a {
   .menu-lista-footer li:hover {
     border-left: 3px solid transparent;
     background-color: var(--cor-s-0);
+  }
+
+  .menu-lista li a:hover,
+  .menu-lista-footer li a:hover {
+    color: var(--cor-2);
   }
 }
 

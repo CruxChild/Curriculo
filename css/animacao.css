@@ -1,0 +1,10 @@
+.js-scroll {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: 0.4s;
+}
+
+.animar {
+  opacity: 1;
+  transform: translateX(0px);
+}

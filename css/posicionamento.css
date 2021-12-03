@@ -459,6 +459,18 @@ footer p {
   .menu-lista-footer li {
     padding: 0px;
   }
+
+  .end {
+    grid-column: 3 /-1;
+  }
+
+  .end p {
+    width: 170px;
+  }
+
+  .end a {
+    padding: 0px;
+  }
 }
 
 /* Dispositivos com 480 largura */

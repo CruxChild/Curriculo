@@ -40,8 +40,6 @@ function initExpandMenu() {
     for (i = 0; i < menuJs.length; i++) {
       if (menuJs[i].innerText === event.path[0].innerText) break;
     }
-
-    console.log((event.path[0].innerText = menuJs[i].innerText));
     this.classList.toggle("ativo");
     this.classList.toggle("inativo");
     document.querySelector(".ativo").innerText = texto[i];
@@ -80,6 +78,7 @@ function initScroll() {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
+    //valor para pegar o topo do elemento selecionado
     const topo = section.offsetTop;
     window.scrollTo({
       top: topo,
@@ -93,3 +92,32 @@ function initScroll() {
 }
 
 initScroll();
+
+//animação ao scroll
+
+function initScrollAn() {
+  const section = document.querySelectorAll(".js-scroll");
+  //verificação
+  if (section.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function scrollAn() {
+      section.forEach((x) => {
+        const sectionTop = x.getBoundingClientRect().top - windowMetade;
+        if (sectionTop < 0) {
+          x.classList.add("animar");
+        } else {
+          //Quando rolar a page para cima, a animação inverte
+          x.classList.remove("animar");
+        }
+      });
+    }
+    //ativação unica para quando iniar o site
+    scrollAn();
+
+    //Evento para a janela inteira
+    window.addEventListener("scroll", scrollAn);
+  }
+}
+
+initScrollAn();
