@@ -81,7 +81,6 @@ function initScroll() {
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
     const topo = section.offsetTop;
-    console.log(topo);
     window.scrollTo({
       top: topo,
       behavior: "smooth",
