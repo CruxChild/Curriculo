@@ -16,6 +16,10 @@
   .dark {
     display: none;
   }
+  .light {
+    display: flex;
+    justify-content: center;
+  }
 }
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
@@ -39,6 +43,10 @@
   /* Switch Logo */
   .light {
     display: none;
+  }
+  .dark {
+    display: flex;
+    justify-content: center;
   }
 }
 

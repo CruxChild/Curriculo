@@ -15,12 +15,12 @@ function initExpandMenu() {
 
   const textoret = [
     ".sbr",
-    ".frm",
+    ".fm",
     ".hbl",
     ".ptf",
     ".cnt",
     ".sbr",
-    ".frm",
+    ".fm",
     ".hbl",
     ".ptf",
     ".cnt",
